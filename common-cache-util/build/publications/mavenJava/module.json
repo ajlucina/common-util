@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ajlucina.cacheutil",
+    "module": "cache-util",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.8"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "cache-util-1.0.0.jar",
+          "url": "cache-util-1.0.0.jar",
+          "size": 10631,
+          "sha512": "d85dcf288c4cc3214502985dc2bf782de49db8b73c9f53f33670cefb55b74e0ef5816df447e9f5b22fbba3cc743f9e7d0cf1db130ad8b720aaa9ec0d282a862a",
+          "sha256": "2bfd7db24def916c01192b09326113e3998feddccc21c0f92496c99dba9c0143",
+          "sha1": "b9a533e14943c0505d8a893d27502239f602a220",
+          "md5": "5c452e557400a102eda932dd2d1efb27"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-context",
+          "version": {
+            "requires": "6.1.14"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "6.1.14"
+          }
+        },
+        {
+          "group": "org.redisson",
+          "module": "redisson",
+          "version": {
+            "requires": "3.52.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "cache-util-1.0.0.jar",
+          "url": "cache-util-1.0.0.jar",
+          "size": 10631,
+          "sha512": "d85dcf288c4cc3214502985dc2bf782de49db8b73c9f53f33670cefb55b74e0ef5816df447e9f5b22fbba3cc743f9e7d0cf1db130ad8b720aaa9ec0d282a862a",
+          "sha256": "2bfd7db24def916c01192b09326113e3998feddccc21c0f92496c99dba9c0143",
+          "sha1": "b9a533e14943c0505d8a893d27502239f602a220",
+          "md5": "5c452e557400a102eda932dd2d1efb27"
+        }
+      ]
+    }
+  ]
+}
