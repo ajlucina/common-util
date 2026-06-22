@@ -1,12 +1,25 @@
-/common-cache-util/.gradle/
-/common-cache-util/settings.gradle
-/common-cache-util/gradle/
-/.idea/
-/common-cache-util/build/
+#
+# IDEA / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
 
-/common-cache-util/*.iml
-/common/gradle/
-/common/.gradle/
-/common/build/
-/common/gradle/
-/common/*.iml
+# OS / tools
+.DS_Store
+Thumbs.db
+
+# Compiled classes / jars
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle wrapper
+gradle/wrapper/
+gradlew
+gradlew.bat
+
+# Others
+out/
+target/iml
