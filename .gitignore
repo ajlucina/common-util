@@ -1,0 +1,12 @@
+/common-cache-util/.gradle/
+/common-cache-util/settings.gradle
+/common-cache-util/gradle/
+/.idea/
+/common-cache-util/build/
+
+/common-cache-util/*.iml
+/common/gradle/
+/common/.gradle/
+/common/build/
+/common/gradle/
+/common/*.iml
