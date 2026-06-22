@@ -32,17 +32,17 @@ public abstract class RedisCache<K, V> implements Cache<K, V> {
 
     @Override
     public V get(K key) {
-        return map().get(key(key));
+        return map().get(cacheKey(key));
     }
 
     @Override
     public void put(K key, V value) {
-        map().put(key(key), value, ttlMinutes, TimeUnit.MINUTES );
+        map().put(cacheKey(key), value, ttlMinutes, TimeUnit.MINUTES );
     }
 
     @Override
     public void remove(K key) {
-        map().fastRemove(key(key));
+        map().fastRemove(cacheKey(key));
     }
 
     private RMapCache<String, V> map() {
@@ -53,7 +53,7 @@ public abstract class RedisCache<K, V> implements Cache<K, V> {
         return cacheName.getClass().getSimpleName() + "." + cacheName.name();
     }
 
-    private String key(K key) {
+    private String cacheKey(K key) {
         return bucket() + ":" + keySerializer.apply(key);
     }
 }
