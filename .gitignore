@@ -4,6 +4,7 @@
 *.iml
 *.iws
 *.ipr
+*.xml
 
 # OS / tools
 .DS_Store
@@ -14,6 +15,9 @@ Thumbs.db
 *.jar
 *.war
 *.ear
+*.bin
+*.lock
+*.probe
 
 # Gradle wrapper
 gradle/wrapper/
